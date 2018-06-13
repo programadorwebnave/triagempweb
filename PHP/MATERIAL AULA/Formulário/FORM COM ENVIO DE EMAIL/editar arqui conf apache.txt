@@ -1,0 +1,9 @@
+
+
+1º habilitar o ssl_module no apache. 
+Para Habilitar abra o arquivo httpd.conf do apache e procure a
+ seguinte linha no arquivo #LoadModule ssl_module modules/mod_ssl.so, retire o simbolo # para habilitar.
+
+2º Habilitar as seguintes extensões no php.ini php_openssl, php_sockets e php_smtp(caso tenha),
+Para habilitar as extensões procure elas no php.ini e retire o ; 
+da frente. As extensões estão assim no php.ini ;extension=php_openssl.dll, ;extension=php_sockets.dll.
